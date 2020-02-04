@@ -6,3 +6,5 @@ services:
     command: redis-server --requirepass Redis2020
     ports:
       - "6379:6379"
+    volumes:
+      - ./database-volume:/var/lib/redis/data
